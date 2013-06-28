@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/webapp/WEB-INF/resources
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/webapp/WEB-INF/resources/login.jsp
+END
+sampleIndex.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/webapp/WEB-INF/resources/sampleIndex.jsp
+END
+include.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/webapp/WEB-INF/resources/include.jsp
+END

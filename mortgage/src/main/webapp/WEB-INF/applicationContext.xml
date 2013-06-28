@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="sampleManager" class="org.apache.shiro.samples.spring.DefaultSampleManager"/>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="cacheManager" ref="cacheManager"/>
+        <property name="sessionMode" value="native"/>
+        <property name="realm" ref="iniRealm"/>
+        <property name="sessionManager" ref="sessionManager"/>
+    </bean>
+    
+    <bean id="sessionManager"
+		class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+		<property name="sessionDAO" ref="sessionDao" />
+		<property name="sessionIdCookie" ref="ssoCookie" />
+	</bean>
+    
+    <bean id="sessionDao" class="org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO"/>
+    
+    <bean id="ssoCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <property name="name" value="SSOcookie"/>
+        <property name="path" value="/"/>
+    </bean>
+
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>
+    </bean>
+    
+    <bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+	    <property name="shared" value="true"/>
+	</bean>
+
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+          depends-on="lifecycleBeanPostProcessor"/>
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <bean id="secureRemoteInvocationExecutor" class="org.apache.shiro.spring.remoting.SecureRemoteInvocationExecutor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+    
+	<bean name="iniRealm" class="org.apache.shiro.realm.text.IniRealm">
+		<constructor-arg type="java.lang.String" value="classpath:shiro.ini"/>
+    </bean>
+
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="filterChainDefinitions">
+            <value>
+                /** = authc
+            </value>
+        </property>
+    </bean>
+
+</beans>

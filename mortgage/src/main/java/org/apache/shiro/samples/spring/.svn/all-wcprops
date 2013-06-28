@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring
+END
+DefaultSampleManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/DefaultSampleManager.java
+END
+BootstrapDataPopulator.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/BootstrapDataPopulator.java
+END

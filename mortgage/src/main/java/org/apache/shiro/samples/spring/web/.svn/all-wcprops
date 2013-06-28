@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/web
+END
+SessionValueCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/web/SessionValueCommand.java
+END
+JnlpController.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/web/JnlpController.java
+END
+LoginCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/web/LoginCommand.java
+END
+IndexController.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/web/IndexController.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/web/LoginController.java
+END
+LogoutController.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1233777/shiro/tags/shiro-root-1.2.0/samples/spring/src/main/java/org/apache/shiro/samples/spring/web/LogoutController.java
+END
